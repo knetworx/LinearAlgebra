@@ -18,8 +18,8 @@ int main() {
 	cout << "|w| = " << !w << endl;
 	cout << "Origin = " << VEC3_ORIGIN << endl;
 
-	VecN<double> v4 = {1, 2, 3, 4};
-	VecN<double> w4 = {5, -1, 3, 7};
+	VecN v4{1, 2, 3, 4};
+	VecN w4{5, -1, 3, 7};
 	cout << "v4 = " << v4 << endl;
 	cout << "w4 = " << w4 << endl;
 	cout << "v4 + w4 = " << v4 + w4 << endl;

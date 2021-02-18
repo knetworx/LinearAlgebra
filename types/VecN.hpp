@@ -7,11 +7,10 @@
 #include <ostream>
 #include <vector>
 
-template <class T>
 struct VecN {
-	std::vector<T> elems;
+	std::vector<double> elems;
 
-	VecN(std::initializer_list<T> l) : elems(l) {}
+	VecN(std::initializer_list<double> l) : elems(l) {}
 	VecN(const VecN &v)
 	{
 		elems = v.elems;
@@ -151,8 +150,7 @@ struct VecN {
 	VecN normalized() { return ~*this; }
 };
 
-template<typename T>
-std::ostream &operator<<(std::ostream& os, const VecN<T> &v)
+std::ostream &operator<<(std::ostream& os, const VecN &v)
 {
 	if (v.elems.size() == 0)
 	{

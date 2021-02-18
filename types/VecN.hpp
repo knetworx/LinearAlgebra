@@ -15,6 +15,7 @@ struct VecN {
 	{
 		elems = v.elems;
 	}
+	VecN(uint numElems) { elems = std::vector<double>(numElems, 0); }
 
 	VecN &operator =(const VecN &v) { elems = v.elems; return *this; }
 
@@ -145,9 +146,16 @@ struct VecN {
 		double mag = !*this; if (mag == 0) { return *this; } return *this / mag;
 	}
 	
+	// Provided for clarity - each of these is implemented as an overloaded operator
 	double dotProduct(VecN &v) { return *this * v; }
 	double magnitude() { return !*this; }
 	VecN normalized() { return ~*this; }
+	
+	// Provided for clarity - the origin vector is just a vector with the given length, which by default is initialized with 0 values
+	static const VecN createOriginVector(uint n)
+	{
+		return VecN(n);
+	}
 };
 
 std::ostream &operator<<(std::ostream& os, const VecN &v)

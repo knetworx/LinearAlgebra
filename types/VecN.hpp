@@ -11,7 +11,7 @@ template <class T>
 struct VecN {
 	std::vector<T> elems;
 
-	VecN(std::initializer_list<double> l) : elems(l) {}
+	VecN(std::initializer_list<T> l) : elems(l) {}
 	VecN(const VecN &v)
 	{
 		elems = v.elems;

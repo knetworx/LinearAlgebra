@@ -29,11 +29,11 @@ int main() {
 	cout << "Dot product = " << v4 * w4 << endl;
 	cout << "Normalized v4 = " << ~v4 << endl;
 	cout << "Normalized w4 = " << ~w4 << endl;
-	cout << "|v4| = " << (!v4) << endl;
-	cout << "|w4| = " << (!w4) << endl;
-	cout << "-w4 = " << (-w4) << endl;
+	cout << "|v4| = " << !v4 << endl;
+	cout << "|w4| = " << !w4 << endl;
+	cout << "-w4 = " << -w4 << endl;
 	cout << "w4 == w4 ? " << (w4 == w4) << endl;
-	cout << "w4 == -w4 ? " << (w4 == (-w4)) << endl;
+	cout << "w4 == -w4 ? " << (w4 == -w4) << endl;
 	cout << "w4 != w4 ? " << (w4 != w4) << endl;
-	cout << "w4 != -w4 ? " << (w4 != (-w4)) << endl;
+	cout << "w4 != -w4 ? " << (w4 != -w4) << endl;
 }

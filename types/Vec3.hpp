@@ -4,8 +4,7 @@
 #include <cmath>
 #include <ostream>
 
-class Vec3 {
-public:
+struct Vec3 {
 	double x, y, z;
 
 	Vec3() : x(0), y(0), z(0) {}

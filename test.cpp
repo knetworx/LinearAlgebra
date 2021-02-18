@@ -1,9 +1,6 @@
 #include "types/Vec3.hpp"
 #include "types/VecN.hpp"
-#include <initializer_list>
 #include <iostream>
-#include <sstream>
-#include <string>
 
 using namespace std;
 

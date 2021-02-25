@@ -1,2 +1,15 @@
 # LinearAlgebra
-Practicing my linear algebra by making a C++ library for it
+Practicing my linear algebra by making some C++ libraries for it
+### test.cpp
+A very basic C++ file to test the libraries I've created. A good place to look for example usage.
+### Vec3.hpp
+Standard 3D vector library
+### VecN.hpp
+Vector library generalized for N-space
+##### Todo:
+- [x] Vec3
+- [x] VecN
+- [ ] Quaternion
+- [ ] Other math concepts?
+- [ ] General math library for intersections, distance, etc.
+- [ ] Use an actual testing framework (e.g. gtest?)

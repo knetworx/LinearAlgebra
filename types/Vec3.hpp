@@ -33,7 +33,10 @@ struct Vec3 {
 	Vec3 crossProduct(Vec3 &v) { return *this ^ v; }
 	double magnitude() { return !*this; }
 	Vec3 normalized() { return ~*this; }
+	void normalize() { *this = ~*this; }
 
+	// These do not perform normalization - if you want a unit vector as a result, provide unit vectors as arguments
+	// Alternatively, you can call getRightVec(f, u).normalized() or simply ~getRightVec(f, u)
 	static Vec3 getRightVec(Vec3 forward, Vec3 up) { return forward ^ up; }
 	static Vec3 getForwardVec(Vec3 up, Vec3 right) { return up ^ right; }
 	static Vec3 getUpVec(Vec3 forward, Vec3 right) { return -forward ^ right; }

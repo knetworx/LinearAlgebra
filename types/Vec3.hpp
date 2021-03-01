@@ -33,6 +33,10 @@ struct Vec3 {
 	Vec3 crossProduct(Vec3 &v) { return *this ^ v; }
 	double magnitude() { return !*this; }
 	Vec3 normalized() { return ~*this; }
+
+	static Vec3 getRightVec(Vec3 forward, Vec3 up) { return forward ^ up; }
+	static Vec3 getForwardVec(Vec3 up, Vec3 right) { return up ^ right; }
+	static Vec3 getUpVec(Vec3 forward, Vec3 right) { return -forward ^ right; }
 };
 
 static const Vec3 VEC3_ORIGIN;

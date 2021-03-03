@@ -12,6 +12,7 @@ Vector library generalized for N-space
 - [x] Vec2
 - [x] Vec3
 - [x] VecN
+- [ ] Projections, angles between vectors, vectors from angles, etc
 - [ ] Quaternion
 - [ ] Other math concepts?
 - [ ] General math library for intersections, distance, etc.
